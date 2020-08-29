@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Privileges Management</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <h1>Assign role</h1>
+      <br><br>
+      <form role="form" method='POST' action='/'>
+        
+        <div class="form-group">
+            
+            <input type="text" placeholder="Search User by Employee Id/Employee Name">
+            <br><br>
+              <div class="dropdown show">
+                <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Select Role
+                  <span class="caret"></span>
+                </a>
+              <br>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">User</a>
+                  <a class="dropdown-item" href="#">Supervisor</a>
+                  <a class="dropdown-item" href="#">Manager</a>
+                  <a class="dropdown-item" href="#">Admin</a>
+                </div>
+              </div>
+              <br><br>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>

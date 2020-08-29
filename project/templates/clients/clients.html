@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+<h2>Clients</h2>
+<br><br>
+
+<a class="btn btn-primary" href="addclient">Add Client</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Client Id</th>
+            <th>Client Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1234</td>
+            <td>EMC</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+        <tr>
+            <td>124</td>
+            <td>FGL</td>
+            <td>12/12/2019</td>
+            <td>12/2/2020</td>
+            <td style="background-color: grey; color: white;">Inactive</td>
+        </tr>
+        <tr>
+            <td>134</td>
+            <td>Helen Of Troy</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+        <tr>
+            <td>1254</td>
+            <td>Lending Tree</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+    </tbody>
+
+</table>
+{% endblock %}

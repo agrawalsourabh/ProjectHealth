@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block content %}
+<h3>Users</h3>
+
+<div class="form-group">
+    <form method="POST">
+        {{form.hidden_tag()}} {{form.userEmpId.label}} {{form.userEmpId(class='form-control', id='userEmpId')}} <br> {{form.userName.label}} {{form.userName(class='form-control', id='userName')}}
+        <br> {{form.userTitle.label}} {{form.userTitle(class='form-control', id='userTitle')}}
+        <br> {{form.userCompanyStartDate.label}} {{form.userCompanyStartDate(class='form-control', id='userCompanyStartDate')}}
+        <br> {{form.userCompanyEndDate.label}} {{form.userCompanyEndDate(class='form-control', id='userCompanyEndDate')}}
+        <br> {{form.userSupervisor.label}} {{form.userSupervisor(class='form-control', id='userSupervisor')}}
+        <br> {{form.userEmailID.label}} {{form.userEmailID(class='form-control', id='userEmailID')}}
+        <br> {{form.userOnsite.label}} {{form.userOnsite(class='form-control', id='userOnsite')}}
+        <br> {{form.userLocation.label}} {{form.userLocation(class='form-control', id='userLocation')}}
+        <br> {{form.userVisaAvailable.label}} {{form.userVisaAvailable(class='form-control', id='userVisaAvailable')}}
+        <br> {{form.assignSystemRole.label}} {{form.assignSystemRole(class='form-control', id='assignSystemRole')}}
+
+        <br> {{form.submit(class='btn btn-primary', id='btnSubmit')}}
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block content %}
+<h2>Reports</h2>
+<br><br>
+
+<div class="container">
+    <div class="mycontaier">
+        <div class="mycontainerchild1 col-sm">
+            <div class="card">
+                <img style="width: 400px" src="{{url_for('static', filename='office.jpeg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Resource Count</h5>
+                    <p class="card-text">Get Resource Count based on location, project</p>
+                    <a href="reportResourceCount.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class=" mycontainerchild2 col-sm">
+            <div class="card">
+                <img style="width: 400px" src="{{url_for('static', filename='wsr.jpeg')}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Weekly Status Report</h5>
+                    <p class="card-text">Weekly Status Report for the projects</p>
+                    <a href="reportResourceCount.html" class="btn btn-primary">Go</a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block content %}
+<h3>Client</h3>
+
+<div class="form-group">
+    <form method="POST">
+        {{form.hidden_tag()}} {{form.clientId.label}} {{form.clientId(class='form-control', id='clientId')}} <br> {{form.clientName.label}} {{form.clientName(class='form-control', id='clientName')}} <br> {{form.clientStartDate.label}} {{form.clientStartDate(class='form-control',
+        id='clientStartDate')}}
+        <br> {{form.clientEndDate.label}} {{form.clientEndDate(class='form-control', id='clientEndDate')}}
+        <br> {{form.submit(class='btn btn-primary', id='btnSubmit')}}
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Projects</h2>
+<br><br>
+<a class="btn btn-primary" href="addproject">Add Project</a>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Client Id</th>
+            <th>Project Id</th>
+            <th>Project Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Project Manager</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1234-EMC</td>
+            <td>1</td>
+            <td>Forms</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td>Neeraj Jain</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+        <tr>
+            <td>1234-EMC</td>
+            <td>2</td>
+            <td>FOP</td>
+            <td>12/12/2019</td>
+            <td>12/2/2020</td>
+            <td>Neeraj Jain</td>
+            <td style="background-color: grey; color: white;">Inactive</td>
+        </tr>
+        <tr>
+            <td>1234-EMC</td>
+            <td>3</td>
+            <td>Billing</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td>Neeraj Jain</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+        <tr>
+            <td>1234-EMC</td>
+            <td>4</td>
+            <td>Underwriting</td>
+            <td>12/12/2019</td>
+            <td>12/12/2021</td>
+            <td>Neeraj Jain</td>
+            <td style="background-color: green; color: white;">Active</td>
+        </tr>
+    </tbody>
+
+</table>
+
+{% endblock %}

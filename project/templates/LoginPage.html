@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+
+  <body>
+	<div class="container"> 
+		<h2>ProjectHealthReport Login</h2> <br><br>
+		<div id="validationCredentials"></div>
+		<!-- <form class="form" action="/action_page.php">  -->
+				<label><b>Username</b></label> 
+				<input id="uname" type="text" placeholder="Enter Emp Id" name="uname" required> 
+<br>
+				<label><b>Password</b></label> 
+				<input id="pass" type="password" placeholder="Enter Password" name="psw" required> 
+<br><br>
+				<button id="btnSubmit" type="submit" onClick="validateCredentials()">Login</button> 
+
+				<input type="checkbox" checked="checked"> Remember me 
+			</div> 
+<br>
+			<div class="container" style="background-color:#f1f1f1"> 
+				<span class="psw">Forgot <a href="#">password?</a></span> 
+			</div> 
+			<script>
+				function validateCredentials(){
+			if(document.getElementById("uname").value == "4409" && document.getElementById("pass").value == "4409")
+			{
+				location.href = 'base.html'
+			} else{
+			document.getElementById("validationCredentials").innerHTML="Username/password invalid"
+			document.getElementById("validationCredentials").style="color: red"
+				}
+				}
+			</script>
+		<!-- </form>  -->
+	</div> 
+
+</body> 
+
+</html> 

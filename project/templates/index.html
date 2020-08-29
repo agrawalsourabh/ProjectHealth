@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+<h1>Homepage</h1>
+<button onclick="btn_click({{data}})">Click me</button>
+
+<div class="container">
+    <div class="pie_container">
+        <canvas id="pieChart"></canvas>
+    </div>
+    <div class="doughnutChart_container">
+        <canvas id="doughnutChart"></canvas>
+    </div>
+</div>
+{% endblock %}

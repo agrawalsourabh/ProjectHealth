@@ -1,0 +1,21 @@
+{% extends "base.html" %} {% block content %}
+<h3>Project</h3>
+
+<div class="form-group">
+    <form method="POST">
+        {{form.hidden_tag()}} {{form.projectId.label}} {{form.projectId(class='form-control', id='projectId')}}
+        <br> {{form.activitiesCompleted.label}} {{form.activitiesCompleted(class='form-control', id='projectName')}}
+        <br> {{form.activitiesCompletedStatus.label}} {{form.activitiesCompletedStatus(class='form-control', id='activitiesCompletedStatus')}}
+        <br> {{form.activitiesPlanned.label}} {{form.activitiesPlanned(class='form-control', id='activitiesPlanned')}}
+        <br> {{form.activitiesPlannedStatus.label}} {{form.activitiesPlannedStatus(class='form-control', id='activitiesPlannedStatus')}}
+        <br> {{form.updatesComments.label}} {{form.updatesComments(class='form-control', id='updatesComments')}}
+        <br> {{form.risks.label}} {{form.risks(class='form-control', id='risks')}}
+
+        <br> {{form.riskProbabilitySeverity.label}} {{form.riskProbabilitySeverity(class='form-control', id='riskProbabilitySeverity')}}
+        <br> {{form.riskMitigation.label}} {{form.riskMitigation(class='form-control', id='riskMitigation')}}
+        <br> {{form.achievements.label}} {{form.achievements(class='form-control', id='achievements')}}
+
+        <br> {{form.submit(class='btn btn-primary', id='btnSubmit')}}
+    </form>
+</div>
+{% endblock %}

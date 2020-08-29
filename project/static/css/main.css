@@ -1,0 +1,14 @@
+.mycontaier {
+    display: flex;
+    width: 100%;
+}
+
+.mycontainerchild1 {
+    flex-basis: 50%;
+    margin: 50px;
+}
+
+.mycontainerchild2 {
+    flex-basis: 50%;
+    margin-top: 50px;
+}

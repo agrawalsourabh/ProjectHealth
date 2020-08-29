@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Health Report</title>
+
+    <!-- bootstrap cdn -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <script src="{{url_for('static', filename='javascript/script.js')}}"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Project Health Report</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a href="{{url_for('client_bp.client_base')}}">Clients</a></li>
+                <li><a href="{{url_for('project_bp.project_home')}}">Projects</a></li>
+                <li><a href="{{url_for('user_bp.user_index')}}">Users</a></li>
+                <li><a href="{{url_for('project_mapping_bp.mapping_index')}}">Mapping</a></li>
+                <li><a href="{{url_for('report_bp.report_base')}}">Reports</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="assignPriviliges.html">Assign Privilige</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Ankit Goyal</a></li>
+                <li><a href="LoginPage.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>

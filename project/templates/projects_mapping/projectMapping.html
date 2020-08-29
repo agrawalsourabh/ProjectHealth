@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block content %}
+<h3>Project</h3>
+
+<div class="form-group">
+    <form method="POST">
+        {{form.hidden_tag()}} {{form.projectId.label}} {{form.projectId(class='form-control', id='projectId')}}
+        <br> {{form.userProjectName.label}} {{form.userProjectName(class='form-control', id='userProjectName')}}
+        <br> {{form.userProjectStartDate.label}} {{form.userProjectStartDate(class='form-control', id='userProjectStartDate')}}
+        <br> {{form.userProjectEndDate.label}} {{form.userProjectEndDate(class='form-control', id='userProjectEndDate')}}
+
+        <div class="form-check ">
+            <br> {{form.billableYesNo.label}} <br>{{form.billableYesNo(class='form-check-input', id='billableYesNo')}}
+        </div>
+        <br><br>
+        <div id="myRadiodiv" style="display:none">
+            <br> {{form.billableStartDate.label}} {{form.billableStartDate(class='form-control', id='billableStartDate')}}
+            <br> {{form.billableEndDate.label}} {{form.billableEndDate(class='form-control', id='billableEndDate')}}
+
+        </div>
+
+        <br> {{form.allocationPercentage.label}} {{form.allocationPercentage(class='form-control', id='allocationPercentage')}}
+
+        <br> {{form.mileStoneName.label}} {{form.mileStoneName(class='form-control', id='mileStoneName')}}
+        <br> {{form.mileStoneStartDate.label}} {{form.mileStoneStartDate(class='form-control', id='mileStoneStartDate')}}
+        <br> {{form.mileStoneEndDate.label}} {{form.mileStoneEndDate(class='form-control', id='mileStoneEndDate')}}
+        <br> {{form.mileStoneComments.label}} {{form.mileStoneComments(class='form-control', id='mileStoneComments')}}
+        <br> {{form.mileStoneStatus.label}} {{form.mileStoneStatus(class='form-control', id='mileStoneStatus')}}
+
+        <br> {{form.submit(class='btn btn-primary', id='btnSubmit')}}
+    </form>
+</div>
+
+<script type="text/javascript">
+    $('#billableYesNo').change(function() {
+        $('#myRadiodiv').toggle();
+    });
+</script>
+{% endblock %}
